@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Moss: A whimsical static site generator</title>
+  <link>https://moss.znck.dev/</link>
+  <description>A static site generator for building blogs with Markdown and Vue</description>
+  <language>en-us</language>
+  <atom:link href="https://moss.znck.dev/rss.xml" rel="self" type="application/rss+xml"/>
+  <lastBuildDate>Wed, 02 Jul 2025 21:51:58 GMT</lastBuildDate>
+  <pubDate>Wed, 02 Jul 2025 21:51:58 GMT</pubDate>
+  
+</channel>
+</rss>

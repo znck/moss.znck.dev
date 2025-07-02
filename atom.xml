@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Moss: A whimsical static site generator</title>
+  <link href="https://moss.znck.dev/atom.xml" rel="self"/>
+  <link href="https://moss.znck.dev/"/>
+  <id>https://moss.znck.dev/</id>
+  <updated>2025-07-02T21:51:51.000Z</updated>
+  <author>
+    <name>Rahul Kadyan (https://znck.dev)</name>
+  </author>
+  <subtitle>A static site generator for building blogs with Markdown and Vue</subtitle>
+  
+</feed>
