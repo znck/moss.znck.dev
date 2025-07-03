@@ -7,4 +7,4 @@
 
 ## Other Pages
 
-- [Moss](./index.html.md): ✨ Markdown-First: Write your content in Markdown with frontmatter support⚡ Fast Development: Hot-reload development server with Vite🔗 Clean URLs: Automatic clean URL generation for better SEO📱 SEO Optimized: Canonical URLs, meta tags, and structured data🎭 RSS/Atom Feeds: Automatic feed generation for your blog📦 Zero Config: Works out of the box with sensible defaults🔧 Customizable: Flexible configuration and theming options🚀 TypeScript Support: Built with TypeScript for better developer experience📝 Syntax Highlighting: Code blocks with syntax highlighting via Shiki🧮 Math Support: LaTeX math rendering with KaTeX🏷️ Tag Support: Organize content with tags and categories
+- [Moss](./index.html.md): ⚠️ Warning: This project is work in progress and is currently private. It has not been published yet.

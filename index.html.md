@@ -1,3 +1,5 @@
+> **⚠️ Warning: This project is work in progress and is currently private. It has not been published yet.**
+
 # Moss
 
 <p align="center">
