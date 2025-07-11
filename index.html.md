@@ -53,7 +53,9 @@ pnpm add -D @znck/moss
 🚀 **TypeScript Support**: Built with TypeScript for better developer experience\
 📝 **Syntax Highlighting**: Code blocks with syntax highlighting via Shiki\
 🧮 **Math Support**: LaTeX math rendering with KaTeX\
-🏷️ **Tag Support**: Organize content with tags and categories
+🏷️ **Tag Support**: Organize content with tags and categories\
+💬 **Comments**: Built-in Giscus integration for GitHub Discussions-powered comments\
+📊 **Analytics**: Privacy-focused analytics with Counterscale support
 
 ## Getting Started
 
@@ -284,6 +286,97 @@ tags: [web, javascript, tutorial]
 
 
 
+### Comments with Giscus
+
+Moss includes built-in support for [Giscus](https://giscus.app), a comments system powered by GitHub Discussions. Comments are automatically added to all article pages when configured.
+
+#### Setting up Giscus
+
+1. **Enable GitHub Discussions** on your repository (Settings → Features → Discussions)
+
+2. **Install the Giscus app** on your repository: [github.com/apps/giscus](https://github.com/apps/giscus)
+
+3. **Configure Giscus** by visiting [giscus.app](https://giscus.app) and following the setup wizard
+
+4. **Add configuration** to your `package.json` or `moss.json`:
+
+**Using package.json:**
+
+```json
+{
+  "giscus": {
+    "repo": "owner/repository",
+    "repoId": "R_kgDOxxxxxxx",
+    "category": "Announcements",
+    "categoryId": "DIC_kwDOxxxxxxx"
+  }
+}
+```
+
+**Using moss.json:**
+
+```json
+{
+  "giscus": {
+    "repo": "owner/repository",
+    "repoId": "R_kgDOxxxxxxx",
+    "category": "Announcements",
+    "categoryId": "DIC_kwDOxxxxxxx"
+  }
+}
+```
+
+#### Giscus Configuration Options
+
+
+
+Additional Giscus options are supported. Visit [giscus.app](https://giscus.app) for the complete configuration guide.
+
+#### Disabling reactions on Specific Pages
+
+You can disable reactions on individual pages by adding `reactions: false` to the frontmatter:
+
+```yaml
+---
+title: My Private Post
+reactions: false
+---
+```
+
+### Analytics with Counterscale
+
+Moss supports [Counterscale](https://counterscale.dev), a privacy-focused, cookieless analytics platform. The analytics script is automatically included in production builds when configured.
+
+#### Setting up Counterscale
+
+**Using package.json:**
+
+```json
+{
+  "counterscale": {
+    "siteId": "example.com",
+    "script": "https://analytics.example.com/tracker.js"
+  }
+}
+```
+
+**Using moss.json:**
+
+```json
+{
+  "counterscale": {
+    "siteId": "example.com",
+    "script": "https://analytics.example.com/tracker.js"
+  }
+}
+```
+
+#### Counterscale Configuration Options
+
+
+
+**Note:** The analytics script is only loaded in production builds (`moss build`), not during development (`moss serve`).
+
 ## Directory Structure
 
 A typical Moss project structure:
@@ -356,8 +449,10 @@ type: article # Content type for categorization
 
 Looking for inspiration? Check out these websites built with Moss:
 
-* [znck.dev](https://znck.dev) - Personal blog
+* [znck.dev](https://znck.dev) - Personal blog with Giscus comments and Counterscale analytics
 * [moss.znck.dev](https://moss.znck.dev) - Documentation for Moss
+
+You can also explore the [znck.dev source code](https://github.com/znck/znck.dev) in this repository under `apps/znck.dev/` to see a real-world example of Moss configuration including Giscus and Counterscale setup.
 
 ## Contributing
 
