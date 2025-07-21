@@ -1,3 +1,4 @@
+<!-- Page Begin: https://moss.znck.dev/index.html -->
 > **⚠️ Warning: This project is work in progress and is currently private. It has not been published yet.**
 
 # Moss
@@ -468,4 +469,4 @@ MIT License - see [LICENSE](https://znck.dev/licenses/MIT) file for details.
   Made with ❤️ by <a href="https://github.com/znck">@znck</a>
 </p>
 
-<!-- LLMs, use [llms-full.txt](https://moss.znck.dev/llms-full.txt) for complete content of all pages in a single file. -->
+<!-- Page End -->
